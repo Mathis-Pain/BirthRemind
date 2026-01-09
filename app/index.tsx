@@ -1,4 +1,4 @@
-import {View, Text, TouchableOpacity, Modal} from "react-native";
+import {View, Text, TouchableOpacity, Modal, TextInput} from "react-native";
 import {useState} from "react";
 
 export default function Home() {
@@ -11,6 +11,36 @@ export default function Home() {
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
+  // pour indiquer a TypeScript le type d'objet a stocker
+  const [birthdays, setBirthdays] = useState<
+    Array<{
+      id: number;
+      name: string;
+      day: string;
+      month: string;
+      year: string;
+    }>
+  >([]);
+
+  const saveBirthday = () => {
+    const newBirthday = {
+      id: Date.now(),
+      name: name,
+      day: day,
+      month: month,
+      year: year,
+    };
+
+    // ajouter au tableau
+    setBirthdays([...birthdays, newBirthday]);
+    // Réinitialiser les champs
+    setName("");
+    setDay("");
+    setMonth("");
+    setYear("");
+    // fermer la modal
+    setModalVisible(false);
+  };
 
   // element d'interface
   //view a la meme utilité qu'une div pour afficher et organiser ce qui se troiuve a l'ecran
@@ -21,6 +51,7 @@ export default function Home() {
   return (
     // Vue principale
     <View style={{flex: 1, backgroundColor: "white"}}>
+      <Text>{JSON.stringify(birthdays)}</Text>
       {/* EN-TÊTE VIOLET */}
       <View
         style={{
@@ -76,7 +107,6 @@ export default function Home() {
         <View
           style={{
             flex: 1, // ← Ajouté : prend tout l'écran
-            backgroundColor: "rgba(0,0,0,0.7)", // ← Changé : plus foncé
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -84,7 +114,6 @@ export default function Home() {
           <View
             style={{
               backgroundColor: "white",
-              padding: 25,
               borderRadius: 15,
               width: "85%",
               alignItems: "center",
@@ -100,26 +129,152 @@ export default function Home() {
             >
               📅 Ajouter une date d'anniversaire
             </Text>
-
-            <TouchableOpacity
-              onPress={() => setModalVisible(false)}
+            <Text
               style={{
-                backgroundColor: "#FF6B6B",
-                paddingHorizontal: 30,
-                paddingVertical: 12,
-                borderRadius: 10,
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#333",
+                marginBottom: 5,
               }}
             >
-              <Text
+              Nom
+            </Text>
+            <TextInput
+              style={{
+                borderWidth: 1,
+                borderColor: "#6003a7ff",
+                borderRadius: 8,
+                padding: 12,
+                fontSize: 16,
+                marginBottom: 15,
+                backgroundColor: "#f9f9f9",
+              }}
+              placeholder="Ex: Marie"
+              value={name}
+              // Updates the "name" state
+              onChangeText={setName}
+            />
+            <Text
+              style={{
+                fontSize: 14,
+                fontWeight: "bold",
+                color: "#333",
+                marginBottom: 5,
+              }}
+            >
+              Date de naissance
+            </Text>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                width: "100%",
+                marginBottom: 15,
+              }}
+            >
+              <TextInput
+                value={day}
+                onChangeText={setDay}
+                placeholder="JJ"
+                keyboardType="numeric"
+                maxLength={2}
                 style={{
-                  color: "white",
-                  fontWeight: "bold",
+                  borderWidth: 1,
+                  borderColor: "#6003a7ff",
+                  borderRadius: 8,
+                  padding: 12,
                   fontSize: 16,
+                  backgroundColor: "#f9f9f9",
+                  flex: 1,
+                  marginRight: 5,
+                  textAlign: "center",
+                }}
+              />
+              <TextInput
+                value={month}
+                onChangeText={setMonth}
+                placeholder="MM"
+                keyboardType="numeric"
+                maxLength={2}
+                style={{
+                  borderWidth: 1,
+                  borderColor: "#6003a7ff",
+                  borderRadius: 8,
+                  padding: 12,
+                  fontSize: 16,
+                  backgroundColor: "#f9f9f9",
+                  flex: 1,
+                  marginRight: 5,
+                  textAlign: "center",
+                }}
+              />
+              <TextInput
+                value={year}
+                onChangeText={setYear}
+                placeholder="AAAA"
+                keyboardType="numeric"
+                maxLength={4}
+                style={{
+                  borderWidth: 1,
+                  borderColor: "#6003a7ff",
+                  borderRadius: 8,
+                  padding: 12,
+                  fontSize: 16,
+                  backgroundColor: "#f9f9f9",
+                  flex: 1.5,
+                  marginRight: 5,
+                  textAlign: "center",
+                }}
+              />
+            </View>
+            <View
+              style={{
+                marginTop: 10,
+                flexDirection: "row",
+                justifyContent: "space-evenly",
+                width: "100%",
+              }}
+            >
+              <TouchableOpacity
+                onPress={saveBirthday}
+                style={{
+                  backgroundColor: "green",
+                  paddingHorizontal: 30,
+                  paddingVertical: 12,
+                  borderRadius: 10,
                 }}
               >
-                Fermer
-              </Text>
-            </TouchableOpacity>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 16,
+                  }}
+                >
+                  Ajouter
+                </Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                onPress={() => setModalVisible(false)}
+                style={{
+                  backgroundColor: "#FF6B6B",
+                  paddingHorizontal: 30,
+                  paddingVertical: 12,
+                  borderRadius: 10,
+                }}
+              >
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 16,
+                  }}
+                >
+                  Fermer
+                </Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </Modal>
