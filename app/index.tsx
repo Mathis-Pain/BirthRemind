@@ -41,20 +41,31 @@ export default function Home() {
         const savedBirthdays = await AsyncStorage.getItem("birthdays");
         if (savedBirthdays) {
           setBirthdays(JSON.parse(savedBirthdays));
-          console.log("✅ Données chargées !");
+          console.log("Données chargées !");
         }
       } catch (error) {
-        console.log("ℹ️ Pas de données sauvegardées (première utilisation)");
+        console.log("Pas de données sauvegardées (première utilisation)");
       }
     };
     loadBirthdays();
   }, []); // ← Le tableau vide [] signifie "exécute une seule fois au démarrage"
 
   // Sauvegarder un nouvel anniversaire
+  // trim retire les epsace debut et fin de texte
   const saveBirthday = async () => {
+    if (!name.trim()) {
+      Alert.alert("Erreur", "Le nom est obligatoire !");
+      return;
+    }
+
+    if (!day || !month) {
+      Alert.alert("Erreur", "La date est obligatoire !");
+      return;
+    }
+
     const newBirthday = {
       id: Date.now(),
-      name: name,
+      name: name.trim(), // Nettoie les espaces
       day: day,
       month: month,
       year: year,
@@ -105,9 +116,9 @@ export default function Home() {
                 "birthdays",
                 JSON.stringify(updatedBirthdays)
               );
-              console.log("✅ Anniversaire supprimé !");
+              console.log("Anniversaire supprimé !");
             } catch (error) {
-              console.error("❌ Erreur lors de la suppression", error);
+              console.error("Erreur lors de la suppression", error);
             }
           },
         },
@@ -433,7 +444,8 @@ export default function Home() {
                       👤 {birthday.name}
                     </Text>
                     <Text style={{fontSize: 14, color: "#666", marginTop: 5}}>
-                      📅 {birthday.day}/{birthday.month}/{birthday.year}
+                      📅 {birthday.day}/{birthday.month}
+                      {birthday.year ? `/${birthday.year}` : ""}
                     </Text>
                     <TouchableOpacity
                       onPress={() => deleteBirthday(birthday.id)}
