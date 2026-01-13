@@ -148,6 +148,7 @@ export default function Home() {
             color: "white",
             fontSize: 32,
             fontWeight: "bold",
+            marginTop: 50,
           }}
         >
           🎂 BirthRemind
@@ -470,7 +471,7 @@ export default function Home() {
                 paddingHorizontal: 30,
                 paddingVertical: 12,
                 borderRadius: 10,
-                marginTop: 20,
+                marginTop: 40,
                 alignItems: "center",
               }}
             >

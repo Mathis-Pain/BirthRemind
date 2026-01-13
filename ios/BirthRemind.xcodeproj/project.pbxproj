@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		14F637C4B487138FE1AF0A5F /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D541F5617F1EAADA8A92E /* ExpoModulesProvider.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		B08478C2227995B4DF331D24 /* libPods-BirthRemind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5235188AEC6A01F230030D4 /* libPods-BirthRemind.a */; };
+		44B84B81BCAB21AEBB3D0B35 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2E61BBDDD56C58C78483704C /* PrivacyInfo.xcprivacy */; };
+		A8AE5C02A280DB66B7E06D65 /* libPods-BirthRemind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F0D8AA55C4BA417CE3F50B /* libPods-BirthRemind.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		D75770CEB9C73744B0FBC647 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D5490C5CD5C2B35AB83A /* ExpoModulesProvider.swift */; };
-		EDE973C5D9A69118D47866AA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8F31DBE80A7AE3C1831ACEE8 /* PrivacyInfo.xcprivacy */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,13 +20,13 @@
 		13B07F961A680F5B00A75B9A /* BirthRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BirthRemind/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BirthRemind/Info.plist; sourceTree = "<group>"; };
-		1619B4269C76100D4D0DBC10 /* Pods-BirthRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.debug.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.debug.xcconfig"; sourceTree = "<group>"; };
-		78E1D5490C5CD5C2B35AB83A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-BirthRemind/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		8F31DBE80A7AE3C1831ACEE8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = BirthRemind/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2E61BBDDD56C58C78483704C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = BirthRemind/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		58519BCAE8FD7756F9DAC5EA /* Pods-BirthRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.release.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.release.xcconfig"; sourceTree = "<group>"; };
+		658F7B6752C2A3D66AE4F12D /* Pods-BirthRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.debug.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = BirthRemind/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B7F0D8AA55C4BA417CE3F50B /* libPods-BirthRemind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirthRemind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		CCE199F9714F698C6B449B46 /* Pods-BirthRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.release.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.release.xcconfig"; sourceTree = "<group>"; };
-		D5235188AEC6A01F230030D4 /* libPods-BirthRemind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirthRemind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6D541F5617F1EAADA8A92E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-BirthRemind/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BirthRemind/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* BirthRemind-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BirthRemind-Bridging-Header.h"; path = "BirthRemind/BirthRemind-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08478C2227995B4DF331D24 /* libPods-BirthRemind.a in Frameworks */,
+				A8AE5C02A280DB66B7E06D65 /* libPods-BirthRemind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				8F31DBE80A7AE3C1831ACEE8 /* PrivacyInfo.xcprivacy */,
+				2E61BBDDD56C58C78483704C /* PrivacyInfo.xcprivacy */,
 			);
 			name = BirthRemind;
 			sourceTree = "<group>";
@@ -62,9 +62,17 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D5235188AEC6A01F230030D4 /* libPods-BirthRemind.a */,
+				B7F0D8AA55C4BA417CE3F50B /* libPods-BirthRemind.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		592E145CC5485BFA71C376FB /* BirthRemind */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D541F5617F1EAADA8A92E /* ExpoModulesProvider.swift */,
+			);
+			name = BirthRemind;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -81,8 +89,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				A940FF3B251CB3743BE9DF87 /* Pods */,
-				C5FAD419C032707B70E50AF6 /* ExpoModulesProviders */,
+				E87F3AB5CE97696FC2074901 /* Pods */,
+				B7E65FF5156DC0418F01C1B9 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -97,14 +105,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A940FF3B251CB3743BE9DF87 /* Pods */ = {
+		B7E65FF5156DC0418F01C1B9 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				1619B4269C76100D4D0DBC10 /* Pods-BirthRemind.debug.xcconfig */,
-				CCE199F9714F698C6B449B46 /* Pods-BirthRemind.release.xcconfig */,
+				592E145CC5485BFA71C376FB /* BirthRemind */,
 			);
-			name = Pods;
-			path = Pods;
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -116,20 +122,14 @@
 			path = BirthRemind/Supporting;
 			sourceTree = "<group>";
 		};
-		C5FAD419C032707B70E50AF6 /* ExpoModulesProviders */ = {
+		E87F3AB5CE97696FC2074901 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D7D8E6835D0356AEEF2B26C3 /* BirthRemind */,
+				658F7B6752C2A3D66AE4F12D /* Pods-BirthRemind.debug.xcconfig */,
+				58519BCAE8FD7756F9DAC5EA /* Pods-BirthRemind.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
-		D7D8E6835D0356AEEF2B26C3 /* BirthRemind */ = {
-			isa = PBXGroup;
-			children = (
-				78E1D5490C5CD5C2B35AB83A /* ExpoModulesProvider.swift */,
-			);
-			name = BirthRemind;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BirthRemind" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				4FF62A1B4AEC1A85E624C161 /* [Expo] Configure project */,
+				1CC1070570565BCD9FF6ECEE /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				FCD338B37F92F57E3A24C82C /* [CP] Embed Pods Frameworks */,
+				CA2DE626FBD1B0319CDD44D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				EDE973C5D9A69118D47866AA /* PrivacyInfo.xcprivacy in Resources */,
+				44B84B81BCAB21AEBB3D0B35 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +242,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4FF62A1B4AEC1A85E624C161 /* [Expo] Configure project */ = {
+		1CC1070570565BCD9FF6ECEE /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -298,7 +298,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirthRemind/Pods-BirthRemind-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCD338B37F92F57E3A24C82C /* [CP] Embed Pods Frameworks */ = {
+		CA2DE626FBD1B0319CDD44D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				D75770CEB9C73744B0FBC647 /* ExpoModulesProvider.swift in Sources */,
+				14F637C4B487138FE1AF0A5F /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +337,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1619B4269C76100D4D0DBC10 /* Pods-BirthRemind.debug.xcconfig */;
+			baseConfigurationReference = 658F7B6752C2A3D66AE4F12D /* Pods-BirthRemind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -373,7 +373,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE199F9714F698C6B449B46 /* Pods-BirthRemind.release.xcconfig */;
+			baseConfigurationReference = 58519BCAE8FD7756F9DAC5EA /* Pods-BirthRemind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
