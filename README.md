@@ -1,51 +1,27 @@
-# Welcome to your Expo app 👋
+### BirthRemind
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🎂 BirthRemind est une application mobile développée en React Native avec Expo.Elle permet de gérer des anniversaires et de recevoir des notifications le jour J.
 
-## Get started
+🎯 Objectif du projet
+Ce projet a pour but de :
 
-1. Install dependencies
+Développer des compétences en React Native
+Appliquer la gestion des états, modales et composants réutilisables
+Implémenter des notifications locales
+Structurer un projet mobile de manière claire et maintenable
+Enrichir mon portfolio avec une application concrète et fonctionnelle
 
-   ```bash
-   npm install
-   ```
+⚙️ Fonctionnalités actuelles
+✅ Interface simple et intuitive
+✅ Ajout d’un anniversaire (nom + date)
+✅ Affichage de la liste des anniversaires
+✅ Utilisation de modales pour l’ajout et l’affichage
 
-2. Start the app
+🚧 Fonctionnalités en cours / à venir
+🛠️ Architecture en composants (Header, Modals, etc.)
+🛠️ Notifications locales le jour J
+🛠️ Persistance des données (AsyncStorage ou base locale)
+🛠️ Choix de l’heure de notification (a voir)
+🛠️ Amélioration du design et de l’UX
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-  npx expo start
+pour lancer l'app `npx expo start`
